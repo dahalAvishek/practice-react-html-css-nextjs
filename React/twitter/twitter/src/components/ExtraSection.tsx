@@ -4,7 +4,7 @@ import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-const ExtraSection = () => {
+const ExtraSection = ():JSX.Element => {
   return (
     <div className="side-section extra-section">
       <div className="container">

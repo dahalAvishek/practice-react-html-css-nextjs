@@ -112,20 +112,56 @@
     color: white;
 }
 
-.imageOrVideo{
+.imageContainer{
     width: 95%;
+    height: 50rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.imageOrVideo>img {
-    max-width: 100%;
-    gap: 1rem;
-    flex: 1;
-    max-height: 100%;
-    object-fit: contain;
+.img-div {
+    background-color: bisque;
+}
+
+.one>.img-div {
+    width: 100%;
+}
+
+.two>.img-div {
+    width: 100%;
+    height: 50%;
+}
+
+.three>.img-div {
+    width: 49.4%;
+    height: 50%;
+}
+
+.three>.img-div:first-of-type {
+    width: 100%;
+    height: 50%;
+}
+
+.four>.img-div {
+    width: 49.4%;
+    height: 50%;
+}
+
+.fourPlus>.img-div {
+    width: 49.4%;
+    height: 50%;
+}
+
+.fourPlus>.img-div:nth-of-type(4) + * {
+    display: none;
+}
+
+.img-div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 } 
 
 .interactives {
@@ -296,14 +332,47 @@ button {
   }
 
   @media screen and (max-width: 1080px) {
-
     .container {
         display: none;    
     }
 
     .extra-section {
         flex-basis: 0;
+        width: 0;
         padding: 0;
     }
+  }
 
+  @media screen and (max-width: 600px) {
+    .extra-section {
+        width: 0;
+        flex-basis: 0;
+    }
+
+    .nav-section {
+        width: 100%;
+        justify-content: flex-start;
+        background-color: black;
+        position: sticky;
+        opacity: 90%
+    }
+
+    .all-elements {
+        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-elements {
+        padding: 5;
+        width: 2rem
+    }
+
+    .nav-elements>ul {
+        flex-direction: row;
+    }
+
+    .imageContainer{
+        gap: 0.1rem;
+    }
   }
