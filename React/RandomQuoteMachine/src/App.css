@@ -1,0 +1,90 @@
+:root {
+    --main-color: #4b3939;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--main-color);
+    transition: opacity 1s ease-in;
+    opacity: 0;
+}
+
+.app.show {
+    opacity: 1;
+}
+
+.app> header {
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #242424;
+    padding: 10px 0;
+}
+
+.app__body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.quote__box {
+    background-color: antiquewhite;
+    width: 40rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--main-color)
+}
+
+.quote__area {
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 1.5rem 1rem;
+}
+
+.author {
+    padding: 2rem;
+    text-align: end;
+    font-size: 1.25rem;
+}
+
+.buttons {
+    display: flex;
+    padding: 1rem 2rem 2rem;
+    height: 5.5rem
+}
+
+.icons {
+    flex: 1;
+    padding: 0;
+}
+
+.icons>button {
+    height: 35px;
+    margin: 0 2px;
+    font-size: 1.5rem;
+    padding: 5px 6px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.button {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0.35rem;
+    height: 2.25rem;
+    font-size: 1.2rem;
+}
+
+
+

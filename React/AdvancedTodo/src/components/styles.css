@@ -1,0 +1,109 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    margin-top: 1.5rem;
+    
+}
+
+.input-box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: 0.1px solid black;
+    transition: 0.2s;
+    box-shadow: inset 0 0 10px black;
+}
+
+.input-box:focus {
+    box-shadow: 0 0 10px 10px rgb(0, 0, 0, 0.1),0 0 10px 1000px rgb(0, 0, 0, 0.5) ;
+    outline: none;
+}
+
+.input-submit {
+    height: 55px;
+    width: 55px;
+    margin: 12px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    background-color: rgb(27, 46, 59);
+    border: none;
+    color: white;
+    font-size: 25px;
+    transition: 0.2s all ease-out;
+    box-shadow: 0 0 10px black;
+}
+
+.input-submit:hover {
+    background-color: rgb(67, 83, 79);
+}
+
+.input-submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todos_single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px 0px black;
+    background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-bright-wood-panel-background-with-long-shiny-planks-picture-image_1161199.jpg")
+}
+
+.todos_single--text {
+    flex: 1;
+    width: 0;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    color:rgb(2, 0, 7)
+}
+
+
+.todos_single--text:focus {
+    /* outline: none; */
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .todos_single {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .input {
+        width: 95%;
+    }
+
+    .todos {
+        width: 95%;
+    }
+
+    .todos_single {
+        width: 100%;
+    }
+}

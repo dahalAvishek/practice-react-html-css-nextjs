@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this Survey Form with the required information</p>
+    </header>
+    
+    <form id="survey-form" method="post">
+      <div class="form-container">
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter first and last name."></label>
+      </div>
+      <div class="form-container">
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email id."></label>
+      </div>
+      <div class="form-container">
+        <label id="number-label">Age: <input id="age" type="number" min="0" max="120" placeholder="Enter your age"></label>
+      </div>
+      <div class="form-container">
+        <label id="religion">Which option best describes your current role? :
+          <select id="dropdown" placeholder="Select current role.">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="3">Full-time job</option>
+              <option value="2">Full-time learner</option>
+              <option value="4">Prefer ot to say</option>
+              <option value="4">Others</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-container">
+        <label id="rating">How do you rate the experience in the job? 
+          <input id="bad" type="radio" name="rating" class="inline"/> Bad</label>
+          <input id="fair" type="radio" name="rating" class="inline"/> Fair</label>
+          <input id="good" type="radio" name="rating" class="inline"/> Good</label>
+        </label>
+    </div>
+    <div class="form-container">
+      <label id="rating">What are your main areas of expertise? 
+        <input value="hobbies" type="checkbox" name="front-end-projects" class="inline"/>Front-end Projects
+        <input value="hobbies" type="checkbox" name="back-end-projects" class="inline"/>Back-end Projects
+        <input value="hobbies" type="checkbox" name="data-visualtization" class="inline"/>Data Visualization
+        <input value="hobbies" type="checkbox" name="challenges" class="inline"/>Challenges
+        <input value="hobbies" type="checkbox" name="open-source-community" class="inline"/>Open Source community
+        <input value="hobbies" type="checkbox" name="gitter-help-rooms" class="inline"/>Gitter help rooms
+        <input value="hobbies" type="checkbox" name="videos " class="inline"/>Videos
+        <input value="hobbies" type="checkbox" name="city-meetups" class="inline"/>City Meetups
+        <input value="hobbies" type="checkbox" name="Wiki" class="inline"/>Wiki
+        <input value="hobbies" type="checkbox" name="Forum" class="inline"/>Forum
+        <input value="hobbies" type="checkbox" name="additional-courses" class="inline"/>Additional Courses
+      </label>
+    </div>
+      <div class="form-container">
+        <label>
+          <textarea id="additional-comments" name="bio" rows="3" cols="30" placeholder="if you have any..."></textarea>
+        </label>
+      </div>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    
+    
+  </body>
+</html>
